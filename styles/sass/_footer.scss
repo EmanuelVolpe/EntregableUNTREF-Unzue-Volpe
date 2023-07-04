@@ -12,19 +12,19 @@
     list-style-type: none;
     margin: 0;
     padding: 1rem;
-}
 
-.footer__link {
-    font-size: 1.5rem;
-    line-height: 2rem;
-    color: rgb(48, 47, 47);
-    display: block;
-    text-decoration: none;
-}
-
-.footer__link:hover {
-    color:rgb(255, 92, 173);
-    text-decoration: none;
+    .footer__link {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: rgb(48, 47, 47);
+        display: block;
+        text-decoration: none;
+    }
+    
+    .footer__link:hover {
+        color:rgb(255, 92, 173);
+        text-decoration: none;
+    }
 }
 
 @media screen and (min-width: map-get(breakpoints.$breakpoints, 'medium')) {
