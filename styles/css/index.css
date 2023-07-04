@@ -1,0 +1,159 @@
+#header {
+  background-color: #81dfa7;
+  position: sticky;
+  padding-top: 4rem;
+  top: 0;
+}
+
+h1 {
+  font-family: "Fredericka the Great";
+  text-shadow: 5px 5px 10px rgb(255, 92, 173);
+  font-style: italic;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.navbar__lista {
+  background-color: #81dfa7;
+  font-family: "Montserrat";
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+.navbar__link {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: rgb(48, 47, 47);
+  display: block;
+  text-decoration: none;
+}
+
+.navbar__link:hover {
+  color: rgb(255, 92, 173);
+  text-decoration: none;
+  transform: translateX(20px);
+  transition: all 0.2s;
+}
+
+@media screen and (min-width: 769px) {
+  .navbar__lista {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+#main {
+  background-color: #b5ffd7;
+  font-family: "Montserrat";
+  font-size: 1rem;
+  padding: 2rem 3rem;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+#main h1 {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#galeria {
+  background-color: #9befbf;
+  display: grid;
+  justify-content: center;
+  align-items: stretch;
+  perspective: 800px;
+  padding: 5rem;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6";
+}
+
+.imagen {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  align-self: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 10px 0 rgb(0, 0, 0);
+  transition: all 0.5s;
+  transform: translateZ(15px);
+}
+
+.imagen:hover {
+  box-shadow: 0 4px 25px 0 rgb(255, 92, 173);
+}
+
+#img1 {
+  grid-area: img1;
+}
+
+#img2 {
+  grid-area: img2;
+}
+
+#img3 {
+  grid-area: img3;
+}
+
+#img4 {
+  grid-area: img4;
+}
+
+#img5 {
+  grid-area: img5;
+}
+
+#img6 {
+  grid-area: img6;
+}
+
+@media screen and (min-width: 769px) {
+  #galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
+  }
+}
+.footer__lista {
+  background-color: #81dfa7;
+  font-family: "Montserrat";
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+.footer__link {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: rgb(48, 47, 47);
+  display: block;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  color: rgb(255, 92, 173);
+  text-decoration: none;
+  transform: translateX(20px);
+  transition: all 0.2s;
+}
+
+@media screen and (min-width: 769px) {
+  .footer__lista {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,54 @@
+@use '_colores';
+@use '_fuentes';
+@use '_breakpoints';
+
+#header{
+    background-color: map-get(colores.$colores , 'color3');
+    position: sticky;
+    padding-top: 4rem;
+    top: 0;
+}
+
+h1{
+    font-family: map-get(fuentes.$fuentes, 'fredericka' );
+    text-shadow: 5px 5px 10px rgb(255, 92, 173);;
+    // text-shadow: 5px 5px 30px rgb(255, 255, 255);;
+    font-style: italic;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.navbar__lista {
+    background-color: map-get(colores.$colores , 'color3');
+    font-family: map-get(fuentes.$fuentes, 'montserrat' );
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+.navbar__link {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: rgb(48, 47, 47);
+    display: block;
+    text-decoration: none;
+}
+
+.navbar__link:hover {
+    color: rgb(255, 92, 173);
+    text-decoration: none;
+    transform: translateX(20px);
+    transition: all 0.2s;
+}
+
+@media screen and (min-width: map-get(breakpoints.$breakpoints, 'medium')) {
+    .navbar__lista {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
