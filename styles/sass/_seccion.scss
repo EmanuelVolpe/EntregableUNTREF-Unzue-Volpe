@@ -17,5 +17,11 @@
     }
 }
 
+@media screen and (min-width: map-get(breakpoints.$breakpoints, 'medium')) {
+    #main {
+        padding: 4rem 5rem;
+    }
+}
+
 
 
