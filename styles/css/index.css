@@ -3,6 +3,7 @@
   position: sticky;
   padding-top: 4rem;
   top: 0;
+  z-index: 1;
 }
 #header h1 {
   font-family: "Fredericka the Great";

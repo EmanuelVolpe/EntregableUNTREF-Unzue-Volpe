@@ -7,6 +7,7 @@
     position: sticky;
     padding-top: 4rem;
     top: 0;
+    z-index: 1;
 
     h1{
         font-family: map-get(fuentes.$fuentes, 'fredericka' );
