@@ -32,7 +32,7 @@
 #header .navbar__lista .navbar__link:hover {
   color: rgb(255, 92, 173);
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 700px) {
   #header .navbar__lista {
     flex-direction: row;
     justify-content: space-around;
@@ -48,29 +48,37 @@
   line-height: 1.5rem;
 }
 #main h1 {
-  text-align: left;
+  text-align: center;
   font-size: 2rem;
   margin-bottom: 1rem;
+  font-family: "Fredericka the Great";
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 700px) {
   #main {
     padding: 4rem 5rem;
   }
 }
-#galeria {
+#fotos {
   background-color: #9befbf;
+  padding: 2rem 3rem;
+}
+#fotos h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Fredericka the Great";
+}
+#fotos #galeria {
   display: grid;
   justify-content: center;
   align-items: stretch;
   perspective: 800px;
-  padding: 5rem;
   gap: 1.5rem;
   grid-template-columns: 1fr;
   grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6";
 }
-
-.imagen {
+#fotos .imagen {
   object-fit: cover;
   width: 100%;
   height: auto;
@@ -80,41 +88,40 @@
   transition: all 0.5s;
   transform: translateZ(15px);
 }
-
-.imagen:hover {
+#fotos .imagen:hover {
   box-shadow: 0 4px 25px 0 rgb(255, 92, 173);
 }
-
-#img1 {
+#fotos #img1 {
   grid-area: img1;
 }
-
-#img2 {
+#fotos #img2 {
   grid-area: img2;
 }
-
-#img3 {
+#fotos #img3 {
   grid-area: img3;
 }
-
-#img4 {
+#fotos #img4 {
   grid-area: img4;
 }
-
-#img5 {
+#fotos #img5 {
   grid-area: img5;
 }
-
-#img6 {
+#fotos #img6 {
   grid-area: img6;
 }
-
-@media screen and (min-width: 769px) {
-  #galeria {
-    grid-template-columns: 1fr 1fr;
+@media screen and (min-width: 700px) {
+  #fotos #galeria {
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "img1 img2" "img3 img4" "img5 img6";
   }
 }
+@media screen and (min-width: 900px) {
+  #fotos #galeria {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "img1 img2 img3" "img4 img5 img6";
+  }
+}
+
 .footer__lista {
   background-color: #81dfa7;
   font-family: "Montserrat";
@@ -138,7 +145,7 @@
   text-decoration: none;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 700px) {
   .footer__lista {
     flex-direction: row;
     justify-content: space-evenly;
