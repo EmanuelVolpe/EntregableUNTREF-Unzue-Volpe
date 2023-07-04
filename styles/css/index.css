@@ -4,16 +4,14 @@
   padding-top: 4rem;
   top: 0;
 }
-
-h1 {
+#header h1 {
   font-family: "Fredericka the Great";
   text-shadow: 5px 5px 10px rgb(255, 92, 173);
   font-style: italic;
   font-size: 3rem;
   text-align: center;
 }
-
-.navbar__lista {
+#header .navbar__lista {
   background-color: #81dfa7;
   font-family: "Montserrat";
   font-weight: bold;
@@ -24,28 +22,23 @@ h1 {
   margin: 0;
   padding: 1rem;
 }
-
-.navbar__link {
+#header .navbar__lista .navbar__link {
   font-size: 1.5rem;
   line-height: 2rem;
   color: rgb(48, 47, 47);
   display: block;
   text-decoration: none;
 }
-
-.navbar__link:hover {
+#header .navbar__lista .navbar__link:hover {
   color: rgb(255, 92, 173);
-  text-decoration: none;
-  transform: translateX(20px);
-  transition: all 0.2s;
 }
-
 @media screen and (min-width: 769px) {
-  .navbar__lista {
+  #header .navbar__lista {
     flex-direction: row;
     justify-content: space-around;
   }
 }
+
 #main {
   background-color: #b5ffd7;
   font-family: "Montserrat";
@@ -145,8 +138,6 @@ h1 {
 .footer__link:hover {
   color: rgb(255, 92, 173);
   text-decoration: none;
-  transform: translateX(20px);
-  transition: all 0.2s;
 }
 
 @media screen and (min-width: 769px) {

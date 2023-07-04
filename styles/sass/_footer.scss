@@ -23,17 +23,14 @@
 }
 
 .footer__link:hover {
-    color: rgb(255, 92, 173);
+    color:rgb(255, 92, 173);
     text-decoration: none;
-    transform: translateX(20px);
-    transition: all 0.2s;
 }
 
 @media screen and (min-width: map-get(breakpoints.$breakpoints, 'medium')) {
     .footer__lista {
         flex-direction: row;
         justify-content: space-evenly;
-
     }
 }
 
